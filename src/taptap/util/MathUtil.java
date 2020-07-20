@@ -17,7 +17,7 @@ public class MathUtil {
      * vi giai thua tang so luong rat nhanh nen se tran kieu int nen ta xai long
      * cho an toan
      *
-     * @param n
+     * 
      * @return n! thuc ra 15! da to vl roi nen ta chi tinh giai thua tu 15 tro
      * lai
      */
