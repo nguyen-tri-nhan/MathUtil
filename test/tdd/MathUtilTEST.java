@@ -50,6 +50,7 @@ public class MathUtilTEST {
          * phai xai cach khac bat ngoai le coi co dung la thu minh can hay ko
          */
         computeFactorial(-5);
+        computeFactorial(16); // giai thua tang nhanh vcl nen ko qua 15
     } 
 /**
  * code co the co loi nhung clean van co the ra file .jar 
