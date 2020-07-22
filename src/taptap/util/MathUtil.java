@@ -20,6 +20,7 @@ public class MathUtil {
      * lai
      */
     public static long computeFactorial(int n) {
+        if (n < 0 || n > 15) throw new IllegalArgumentException();
         if (n == 0 || n == 1) {
             return 1;
         }
