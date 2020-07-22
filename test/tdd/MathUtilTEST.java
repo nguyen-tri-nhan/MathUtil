@@ -36,22 +36,22 @@ public class MathUtilTEST {
      *
      */
     }
-//    @Test(expected = IllegalArgumentException.class)
-////    /**
-////     * annotation bao cho JVM, jar biet lam gi ham nay chua cac tinh huong ca
-////     * chon cF -5; cF 16
-////     */
-//    public void testFailedCases() {
-//        //exception xem nhu dung
-//        /**
-//         * Ngoai le k phai value so sanh dc
-//         * ko xai dc Assert vi no can 2 value expected vs actual
-//         * trong khi exception ko phai actual de so sanh
-//         * phai xai cach khac bat ngoai le coi co dung la thu minh can hay ko
-//         */
-//        computeFactorial(-5);
-//        computeFactorial(16); // giai thua tang nhanh vcl nen ko qua 15
-//    } 
+    @Test(expected = IllegalArgumentException.class)
+    /**
+     * annotation bao cho JVM, jar biet lam gi ham nay chua cac tinh huong ca
+     * chon cF -5; cF 16
+     */
+    public void testFailedCases() {
+        //exception xem nhu dung
+        /**
+         * Ngoai le k phai value so sanh dc
+         * ko xai dc Assert vi no can 2 value expected vs actual
+         * trong khi exception ko phai actual de so sanh
+         * phai xai cach khac bat ngoai le coi co dung la thu minh can hay ko
+         */
+        computeFactorial(-5);
+        computeFactorial(16); // giai thua tang nhanh vcl nen ko qua 15
+    } 
 /**
  * code co the co loi nhung clean van co the ra file .jar 
  * neu code ko sai cu phap

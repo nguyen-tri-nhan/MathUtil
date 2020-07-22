@@ -16,17 +16,14 @@ public class MathUtil {
     /**
      * vi giai thua tang so luong rat nhanh nen se tran kieu int nen ta xai long
      * cho an toan
-     *
-     * 
      * @return n! thuc ra 15! da to vl roi nen ta chi tinh giai thua tu 15 tro
      * lai
      */
     public static long computeFactorial(int n) {
-        if (n < 0 || n > 15) throw new IllegalArgumentException("Invalid input, n must be greater or equal than zero");
-        long result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= i;
+        if (n == 0 || n == 1) {
+            return 1;
         }
-        return result;
+        // song sot den day sure n in (2,15) ko can else
+        return n*computeFactorial(n-1); // n! = n*(n-1)!
     }
 }
